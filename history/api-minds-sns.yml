@@ -1,7 +1,7 @@
 url: $MINDS_SNS_API_URL
-status: up
-code: 200
-responseTime: 171
-lastUpdated: 2026-03-22T19:44:18.168Z
+status: down
+code: 502
+responseTime: 128
+lastUpdated: 2026-03-22T20:00:04.135Z
 startTime: 2022-10-31T05:59:36.000Z
 generator: Upptime <https://github.com/upptime/upptime>
