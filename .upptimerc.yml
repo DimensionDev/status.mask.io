@@ -143,11 +143,6 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Minds SNS
-  url: $MINDS_SNS_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
 - name: API - Rabby NFT
   url: $RABBY_NFT_API_URL
   method: GET
