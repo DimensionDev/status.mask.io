@@ -96,15 +96,6 @@ sites:
   __dangerous__body_degraded_if_text_missing: "true"
   assignees:
     - frontendgatekeeper
-- name: RPC server - Aurora
-  url: $AURORA_RPC_URL
-  method: POST
-  headers:
-    - "Content-Type: application/json"
-  body: '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":42}'
-  __dangerous__body_degraded_if_text_missing: "true"
-  assignees:
-    - frontendgatekeeper
 - name: RPC server - Conflux
   url: $CONFLUX_RPC_URL
   method: POST
@@ -184,13 +175,6 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Gem NFT
-  url: $GEM_NFT_API_URL
-  method: GET
-  headers:
-    - "x-api-key: $GEM_NFT_API_X_API_KEY"
-  assignees:
-    - frontendgatekeeper
 - name: API - Looksrare NFT
   url: $LOOKSRARE_NFT_API_URL
   method: GET
@@ -206,33 +190,8 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - NFTScan EVM NFT
-  url: $NFTSCAN_EVM_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - NFTScan Solana NFT
-  url: $NFTSCAN_SOLANA_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - NFTScan Trending
-  url: $NFTSCAN_TRENDING_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - NFTScan Trending
-  url: $NFTSCAN_TRENDING_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
 - name: API - Rabby NFT
   url: $RABBY_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - X2Y2 NFT
-  url: $X2Y2_NFT_API_URL
   method: GET
   assignees:
     - frontendgatekeeper
@@ -269,13 +228,6 @@ sites:
   body: '{"operationName": "GET_PROFILES_QUERY", "variables": {"platform": "ethereum", "identity": "_"}, "query": "query GET_PROFILES_QUERY($platform: String, $identity: String) { identity(platform: $platform, identity: $identity) { neighborWithTraversal(depth: 1) { source }}}"}'
   assignees:
     - frontendgatekeeper  
-- name: API - Simple Hash
-  url: $SIMPLE_HASH_API_URL
-  method: GET 
-  headers:
-    - "x-api-key: $SIMPLE_HASH_API_KEY"  
-  assignees:
-    - frontendgatekeeper
 - name: API - Twitter Handler Verify
   url: $TWITTER_HANDLER_VERIFY_URL
   method: GET
