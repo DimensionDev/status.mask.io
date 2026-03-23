@@ -5,27 +5,9 @@ repo: status # The name of this repository
 sites:
 - name: mask.io
   url: https://mask.io
-- name: Maskbook UnlockProtocol plugin server
-  url: https://unlock.r2d2.to
-# Mastodon Instances
-- name: mastodon.cloud
-  url: https://mastodon.cloud/health
-  __dangerous__body_degraded_if_text_missing: "OK"
-- name: mstdn.jp
-  url: https://mstdn.jp/health
-  __dangerous__body_degraded_if_text_missing: "OK"
 # RPC server used by Mask products
 - name: RPC server - Infura Mainnet
   url: $INFURA_MAINNET_RPC_URL
-  method: POST
-  headers:
-    - "Content-Type: application/json"
-  body: '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":42}'
-  __dangerous__body_degraded_if_text_missing: "true"
-  assignees:
-    - frontendgatekeeper
-- name: RPC server - Quiknode Mainnet
-  url: $QUIKNODE_MAINNET_RPC_URL
   method: POST
   headers:
     - "Content-Type: application/json"
@@ -80,15 +62,6 @@ sites:
     - frontendgatekeeper
 - name: RPC server - Celo
   url: $CELO_RPC_URL
-  method: POST
-  headers:
-    - "Content-Type: application/json"
-  body: '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":42}'
-  __dangerous__body_degraded_if_text_missing: "true"
-  assignees:
-    - frontendgatekeeper
-- name: RPC server - Fantom
-  url: $FANTOM_RPC_URL
   method: POST
   headers:
     - "Content-Type: application/json"
@@ -155,28 +128,13 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - CoinMarketCap Trending
-  url: $COINMARKETCAP_TRENDING_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
 - name: API - CoinGecko Trending
   url: $COINGECKO_TRENDING_API_URL
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Debank Gas Price Dict
-  url: $DEBANK_GAS_PRICE_DICT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
 - name: API - Debank NFT
   url: $DEBANK_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - Looksrare NFT
-  url: $LOOKSRARE_NFT_API_URL
   method: GET
   assignees:
     - frontendgatekeeper
@@ -195,47 +153,6 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Zora NFT
-  url: $ZORA_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - Twitter Identity
-  url: $TWITTER_IDENTITY_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - Lens
-  url: $LENS_API_URL
-  method: POST
-  headers:
-    - "Content-Type: application/json"
-  body: '{"query":"query Query { ping }"}'
-  __dangerous__body_degraded_if_text_missing: "pong"
-  assignees:
-    - frontendgatekeeper
-- name: API - RSS3 Domain
-  url: $RSS3_DOMAIN_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - Relation Service
-  url: $RELATION_SERVICE_API_URL
-  method: POST
-  headers:
-    - "Content-Type: application/json"  
-  __dangerous__body_degraded_if_text_missing: "true"
-  body: '{"operationName": "GET_PROFILES_QUERY", "variables": {"platform": "ethereum", "identity": "_"}, "query": "query GET_PROFILES_QUERY($platform: String, $identity: String) { identity(platform: $platform, identity: $identity) { neighborWithTraversal(depth: 1) { source }}}"}'
-  assignees:
-    - frontendgatekeeper  
-- name: API - Twitter Handler Verify
-  url: $TWITTER_HANDLER_VERIFY_URL
-  method: GET
-  headers:
-    - "x-api-key: $TWITTER_HANDLER_VERIFY_API_KEY"  
-  assignees:
-    - frontendgatekeeper  
-
 
 # Assets
 - name: Assets - Cloudflare Images
