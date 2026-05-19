@@ -1,7 +1,7 @@
 url: $AVALANCHE_RPC_URL
 status: degraded
 code: 403
-responseTime: 86
-lastUpdated: 2026-05-18T23:28:18.869Z
+responseTime: 58
+lastUpdated: 2026-05-19T23:30:12.366Z
 startTime: 2022-07-14T12:11:09.000Z
 generator: Upptime <https://github.com/upptime/upptime>
