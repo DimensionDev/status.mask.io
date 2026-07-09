@@ -116,13 +116,6 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Chainbase NFT
-  url: $CHAINBASE_NFT_API_URL
-  method: GET
-  headers:
-    - "X-API-KEY: $CHAINBASE_NFT_API_X_API_KEY"
-  assignees:
-    - frontendgatekeeper
 - name: API - CoinMarketCap Trending Widget
   url: $COINMARKETCAP_TRENDING_WIDGET_API_URL
   method: GET
@@ -133,18 +126,8 @@ sites:
   method: GET
   assignees:
     - frontendgatekeeper
-- name: API - Debank NFT
-  url: $DEBANK_NFT_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
 - name: API - Metaswap Gas Price
   url: $METASWAP_GAS_PRICE_API_URL
-  method: GET
-  assignees:
-    - frontendgatekeeper
-- name: API - Rabby NFT
-  url: $RABBY_NFT_API_URL
   method: GET
   assignees:
     - frontendgatekeeper
