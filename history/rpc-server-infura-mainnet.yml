@@ -1,7 +1,7 @@
 url: $INFURA_MAINNET_RPC_URL
 status: degraded
 code: 403
-responseTime: 402
-lastUpdated: 2026-07-11T23:20:27.944Z
+responseTime: 320
+lastUpdated: 2026-07-12T23:20:46.716Z
 startTime: 2022-07-14T12:10:57.000Z
 generator: Upptime <https://github.com/upptime/upptime>
