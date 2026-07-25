@@ -1,7 +1,7 @@
 url: $BINANCE_BSC_RPC_URL
-status: degraded
-code: 0
-responseTime: 0
-lastUpdated: 2026-07-25T21:03:44.416Z
+status: up
+code: 200
+responseTime: 212
+lastUpdated: 2026-07-25T21:24:38.553Z
 startTime: 2022-07-14T12:11:03.000Z
 generator: Upptime <https://github.com/upptime/upptime>
