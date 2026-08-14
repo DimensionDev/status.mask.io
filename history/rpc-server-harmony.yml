@@ -1,7 +1,7 @@
 url: $HARMONY_RPC_URL
 status: degraded
 code: 502
-responseTime: 33
-lastUpdated: 2026-08-13T23:18:08.970Z
+responseTime: 16
+lastUpdated: 2026-08-14T23:07:42.280Z
 startTime: 2022-07-14T12:11:16.000Z
 generator: Upptime <https://github.com/upptime/upptime>
