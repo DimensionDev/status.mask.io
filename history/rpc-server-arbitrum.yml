@@ -1,7 +1,7 @@
 url: $ARBITRUM_RPC_URL
 status: degraded
 code: 403
-responseTime: 77
-lastUpdated: 2026-08-23T23:06:19.049Z
+responseTime: 245
+lastUpdated: 2026-08-24T23:08:12.402Z
 startTime: 2022-07-14T12:11:07.000Z
 generator: Upptime <https://github.com/upptime/upptime>
