@@ -1,7 +1,7 @@
 url: $COINMARKETCAP_TRENDING_WIDGET_API_URL
 status: up
 code: 200
-responseTime: 207
-lastUpdated: 2026-09-14T23:13:22.734Z
+responseTime: 194
+lastUpdated: 2026-09-15T23:13:51.993Z
 startTime: 2022-10-31T05:59:26.000Z
 generator: Upptime <https://github.com/upptime/upptime>
